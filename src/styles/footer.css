@@ -1,0 +1,17 @@
+.footer {
+  background: var(--color-ink);
+  color: #d9cfc2;
+  padding: var(--space-3) 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-size: 13px;
+}
+
+.footer__links a {
+  color: #d9cfc2;
+}
