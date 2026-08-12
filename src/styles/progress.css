@@ -1,0 +1,61 @@
+.progress {
+  background: var(--color-cream-alt);
+}
+
+.progress__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+
+.status-card {
+  background: var(--color-cream);
+  border: 1px solid rgba(58, 36, 24, 0.1);
+  border-radius: 6px;
+  padding: var(--space-3);
+}
+
+.status-card__label {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-1);
+}
+
+.status-card__body {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.fundraise__labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--color-ink);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.fundraise__bar {
+  height: 12px;
+  background: #e0d9c8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fundraise__bar-fill {
+  height: 100%;
+  background: var(--color-terracotta);
+  width: 0%;
+  transition: width 0.6s ease;
+}
+
+.fundraise__note {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+}
