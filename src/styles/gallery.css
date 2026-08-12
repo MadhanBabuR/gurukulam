@@ -1,0 +1,19 @@
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-2);
+}
+
+.gallery__placeholder {
+  aspect-ratio: 4 / 3;
+  background: repeating-linear-gradient(135deg, var(--color-cream-alt), var(--color-cream-alt) 10px, #ece4d0 10px, #ece4d0 20px);
+  border: 1px dashed var(--color-terracotta);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-2);
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
