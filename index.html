@@ -85,7 +85,30 @@
       </div>
     </div>
   </section>
-  <!-- DONATE -->
+  <section class="section donate" id="donate">
+    <div class="container">
+      <h2 class="section__title">Support the Gurukulam</h2>
+      <p class="donate__intro">Every contribution goes toward the land, the hospital upgrade, and building the college. Choose whichever option works for you.</p>
+      <div class="donate__options">
+        <div class="donate__option">
+          <h3>India</h3>
+          <p>Donate via Razorpay — UPI, cards, netbanking.</p>
+          <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_PLACEHOLDER_RAZORPAY_ID" async></script>
+          </form>
+        </div>
+        <div class="donate__option">
+          <h3>International / NRI</h3>
+          <p>Donate via PayPal from anywhere in the world.</p>
+          <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="hosted_button_id" value="PLACEHOLDER_PAYPAL_BUTTON_ID" />
+            <input class="btn btn-primary" type="submit" value="Donate with PayPal" />
+          </form>
+        </div>
+      </div>
+      <p class="donate__note">Kalarigram is a registered Trust. Payment IDs above are placeholders — replace with live Razorpay and PayPal button IDs before launch.</p>
+    </div>
+  </section>
   <!-- CONTACT -->
   <!-- FOOTER -->
   <script type="module" src="/src/main.js"></script>
