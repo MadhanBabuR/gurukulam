@@ -15,3 +15,18 @@
 .footer__links a {
   color: #d9cfc2;
 }
+
+.footer__brand {
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--space-3);
+}
+
+.footer__logo {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  background: var(--color-cream);
+  border-radius: 8px;
+  padding: var(--space-2);
+}
