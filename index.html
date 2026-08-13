@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kalarigram Gurukulam — Kalari, Ayurveda &amp; the Gurukula Tradition</title>
   <meta name="description" content="Kalarigram is building a Gurukulam in Calicut, Kerala — combining Kalaripayattu training, an Ayurveda college, and an attached hospital. Support the vision." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kalarigram Gurukulam" />
+  <meta property="og:description" content="Kalarigram is building a Gurukulam in Calicut, Kerala — combining Kalaripayattu training, an Ayurveda college, and an attached hospital. Support the vision." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Kalarigram Gurukulam" />
+  <meta name="twitter:description" content="Kalarigram is building a Gurukulam in Calicut, Kerala — combining Kalaripayattu training, an Ayurveda college, and an attached hospital. Support the vision." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A1%EF%B8%8F%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +21,7 @@
   <nav class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#hero" class="nav__brand">Kalarigram Gurukulam</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links">
@@ -27,9 +33,10 @@
       </ul>
     </div>
   </nav>
+  <main>
   <header class="hero" id="hero">
     <div class="container hero__inner">
-      <p class="eyebrow">Kalarigram Gurukulam &middot; Calicut, Kerala</p>
+      <p class="hero__eyebrow">Kalarigram Gurukulam &middot; Calicut, Kerala</p>
       <h1 class="hero__headline">A Gurukulam for Kalaripayattu, Ayurveda &amp; the next generation of healers.</h1>
       <p class="hero__sub">Kalarigram is building a residential Gurukulam in Calicut — combining traditional Kalaripayattu training with an NCISM-track Ayurveda college and an attached hospital. We're currently acquiring the land and raising the funds to make it real.</p>
       <div class="hero__actions">
@@ -83,14 +90,14 @@
         <div class="fundraise__bar">
           <div class="fundraise__bar-fill" id="fundraise-bar-fill"></div>
         </div>
-        <p class="fundraise__note">Placeholder figures — update with real fundraising totals before launch.</p>
+        <p class="fundraise__note placeholder-notice">Placeholder figures — update with real fundraising totals before launch.</p>
       </div>
     </div>
   </section>
   <section class="section gallery" id="gallery">
     <div class="container">
       <h2 class="section__title">Gallery</h2>
-      <p class="section__intro">Photos are placeholders for now — real images of training, the land, and the hospital go here before launch.</p>
+      <p class="section__intro placeholder-notice">Photos are placeholders for now — real images of training, the land, and the hospital go here before launch.</p>
       <div class="gallery__grid">
         <div class="gallery__placeholder">Training at Kalarigram</div>
         <div class="gallery__placeholder">The land in Calicut</div>
@@ -120,7 +127,7 @@
           </form>
         </div>
       </div>
-      <p class="donate__note">Kalarigram is a registered Trust. Payment IDs above are placeholders — replace with live Razorpay and PayPal button IDs before launch.</p>
+      <p class="donate__note placeholder-notice">Kalarigram is a registered Trust. Payment IDs above are placeholders — replace with live Razorpay and PayPal button IDs before launch.</p>
     </div>
   </section>
   <section class="section contact" id="contact">
@@ -140,7 +147,7 @@
           <label for="contact-message">Message</label>
           <textarea id="contact-message" name="message" rows="4" required></textarea>
         </div>
-        <p id="contact-form-error" class="contact__error" hidden></p>
+        <p id="contact-form-error" class="contact__error" role="alert" hidden></p>
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
       <div class="contact__meta">
@@ -149,6 +156,7 @@
       </div>
     </div>
   </section>
+  </main>
   <footer class="footer">
     <div class="container footer__inner">
       <p>&copy; <span id="footer-year"></span> Kalarigram Trust. All rights reserved.</p>

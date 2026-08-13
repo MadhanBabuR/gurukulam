@@ -8,14 +8,24 @@ function initContactForm() {
   if (!form || !errorEl) return;
 
   form.addEventListener('submit', (event) => {
-    const name = form.querySelector('#contact-name').value.trim();
-    const email = form.querySelector('#contact-email').value.trim();
-    const message = form.querySelector('#contact-message').value.trim();
+    const nameEl = form.querySelector('#contact-name');
+    const emailEl = form.querySelector('#contact-email');
+    const messageEl = form.querySelector('#contact-message');
+    const name = nameEl.value.trim();
+    const email = emailEl.value.trim();
+    const message = messageEl.value.trim();
 
     if (!name || !email || !message) {
       event.preventDefault();
       errorEl.textContent = 'Please fill in your name, email, and message.';
       errorEl.hidden = false;
+      if (!name) {
+        nameEl.focus();
+      } else if (!email) {
+        emailEl.focus();
+      } else {
+        messageEl.focus();
+      }
       return;
     }
 
@@ -23,6 +33,7 @@ function initContactForm() {
       event.preventDefault();
       errorEl.textContent = 'Please enter a valid email address.';
       errorEl.hidden = false;
+      emailEl.focus();
       return;
     }
 

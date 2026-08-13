@@ -51,3 +51,7 @@
   border: none;
   cursor: pointer;
 }
+
+.donate .btn-primary:hover {
+  background: #b8912f;
+}

@@ -7,7 +7,7 @@
   max-width: 720px;
 }
 
-.eyebrow {
+.hero__eyebrow {
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;

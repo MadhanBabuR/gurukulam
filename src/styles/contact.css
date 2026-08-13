@@ -23,7 +23,7 @@
   font-family: var(--font-body);
   font-size: 14px;
   padding: 10px 12px;
-  border: 1px solid rgba(58, 36, 24, 0.25);
+  border: 1px solid var(--color-border-input);
   border-radius: 4px;
   background: #fff;
   color: var(--color-ink);

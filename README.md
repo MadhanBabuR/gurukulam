@@ -39,9 +39,16 @@ sharing the live URL publicly:
 | Formspree form endpoint | `index.html`, Contact section, form `action` attribute | `https://formspree.io/f/PLACEHOLDER_FORM_ID` |
 | Fundraising totals | `src/js/progressBar.js`, `FUNDRAISE_RAISED` / `FUNDRAISE_GOAL` | `0` / `10000000` |
 | Real photos | `index.html`, Gallery section — replace the four `.gallery__placeholder` divs with `<img>` tags once photos exist | 4 placeholder tiles |
-| Logo / wordmark | `index.html`, Nav brand (`.nav__brand`) currently plain text | text-only "Kalarigram Gurukulam" |
+| Logo / wordmark | `index.html`, Nav brand (`.nav__brand`) currently plain text; the favicon (an emoji data-URI in `index.html`'s `<head>`) is also a placeholder for a real logo mark, not just the nav brand text | text-only "Kalarigram Gurukulam" |
 | Final copy review | Hero, Vision, Progress, Donate, Contact sections | placeholder copy drawn from prior project research |
 | Custom domain | DNS / host settings | none configured — site is reachable only at the Netlify/Vercel-issued URL until this is done |
+| Placeholder disclosure text (3 elements) | index.html, elements with class `placeholder-notice` | remove all three once real credentials/content are in place |
+| robots.txt | public/robots.txt | currently blocks all crawlers (site isn't ready for public search indexing yet) — update or remove this file when the site is ready to go live and be indexed |
+| Open Graph / Twitter image (`og:image`) | index.html `<head>` | no image tag added yet since no real photos exist — add `<meta property="og:image">` once a real hero/share image is ready |
+| Donate section suggested contribution tiers | index.html Donate section | spec called for "suggested contribution framing" — no suggested amounts/tiers exist yet; add once decided |
+| Contact section address + social links | index.html Contact section | spec called for a full address and social links — currently only "Kalarigram · Calicut, Kerala, India" and the kalarigram.org link exist; add real street address (if to be published) and social media links once available |
+| Footer trust/registration info + social links | index.html Footer | spec called for trust/registration info and social links — currently only a copyright line and one website link exist; the Donate section already states "Kalarigram is a registered Trust" with no registration number to back it, which matters for donors claiming 80G tax deductions in India — add the actual registration number and any social links once available |
+| Razorpay merchant policy pages | N/A — not yet built | Razorpay's live-payment-button activation typically requires the site to link Terms & Conditions, a Privacy Policy, and a Refund/Cancellation Policy; this site currently has none. This conflicts with the project's single-page-only scope decision and needs a decision (e.g. link to externally-hosted policy documents, or add anchored sections) before Razorpay can go live — flag to the project owner, don't build a fix without a decision. |
 
 ## Manual QA checklist
 
