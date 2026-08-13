@@ -25,10 +25,9 @@
 }
 
 .nav__logo {
-  height: 64px;
-  width: 36px;
-  object-fit: cover;
-  object-position: left center;
+  height: 52px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav__links {
