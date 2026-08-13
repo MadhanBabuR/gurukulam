@@ -34,7 +34,7 @@ sharing the live URL publicly:
 
 | What | Where | Placeholder value |
 |---|---|---|
-| Razorpay payment button ID | `index.html`, Donate section, `data-payment_button_id` attribute | `pl_PLACEHOLDER_RAZORPAY_ID` |
+| Razorpay integration | `index.html`, Donate section (India card) | currently a static, disabled `<button>` with no Razorpay script wired up — swap for the real `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="...">` embed (see Task 6 of the implementation plan for the exact snippet) once a live Razorpay button ID exists |
 | PayPal hosted button ID | `index.html`, Donate section, `hosted_button_id` input value | `PLACEHOLDER_PAYPAL_BUTTON_ID` |
 | Formspree form endpoint | `index.html`, Contact section, form `action` attribute | `https://formspree.io/f/PLACEHOLDER_FORM_ID` |
 | Fundraising totals | `src/js/progressBar.js`, `FUNDRAISE_RAISED` / `FUNDRAISE_GOAL` | `0` / `10000000` |
