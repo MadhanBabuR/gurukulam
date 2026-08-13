@@ -39,12 +39,3 @@
   color: #b91c1c;
   font-size: 13px;
 }
-
-.contact__meta {
-  font-size: 14px;
-  color: var(--color-text-muted);
-}
-
-.contact__meta a {
-  color: var(--color-terracotta);
-}

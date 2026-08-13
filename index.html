@@ -122,10 +122,7 @@
         <div class="donate__option">
           <h3>International / NRI</h3>
           <p>Donate via PayPal from anywhere in the world.</p>
-          <form action="https://www.paypal.com/donate" method="post" target="_top">
-            <input type="hidden" name="hosted_button_id" value="PLACEHOLDER_PAYPAL_BUTTON_ID" />
-            <input class="btn btn-primary" type="submit" value="Donate with PayPal" />
-          </form>
+          <button type="button" class="btn btn-primary" disabled>Donate with PayPal</button>
         </div>
       </div>
       <p class="donate__note placeholder-notice">Kalarigram is a registered Trust. Payment IDs above are placeholders — replace with live Razorpay and PayPal button IDs before launch.</p>
@@ -149,12 +146,8 @@
           <textarea id="contact-message" name="message" rows="4" required></textarea>
         </div>
         <p id="contact-form-error" class="contact__error" role="alert" hidden></p>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="button" class="btn btn-primary" disabled>Send Message</button>
       </form>
-      <div class="contact__meta">
-        <p>Kalarigram &middot; Calicut, Kerala, India</p>
-        <p><a href="https://www.kalarigram.org" target="_blank" rel="noopener">kalarigram.org</a></p>
-      </div>
     </div>
   </section>
   </main>
