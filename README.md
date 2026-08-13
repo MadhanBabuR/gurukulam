@@ -1,7 +1,7 @@
-# Kalarigram Gurukulam Website
+# GVS Ayurveda Kalari Gurukulam Website
 
-Single-page static site for the Kalarigram Gurukulam project (Calicut, Kerala): the story,
-project status, gallery, and donations (Razorpay + PayPal).
+Single-page static site for GVS Ayurveda Kalari Gurukulam (Calicut, Kerala), built by Kalarigram:
+the story, project status, gallery, and donations (Razorpay + PayPal).
 
 ## Develop
 
@@ -39,7 +39,7 @@ sharing the live URL publicly:
 | Formspree form endpoint | `index.html`, Contact section, form `action` attribute | `https://formspree.io/f/PLACEHOLDER_FORM_ID` |
 | Fundraising totals | `src/js/progressBar.js`, `FUNDRAISE_RAISED` / `FUNDRAISE_GOAL` | `0` / `10000000` |
 | Real photos | `index.html`, Gallery section — replace the four `.gallery__placeholder` divs with `<img>` tags once photos exist | 4 placeholder tiles |
-| Logo / wordmark | `index.html`, Nav brand (`.nav__brand`) currently plain text; the favicon (an emoji data-URI in `index.html`'s `<head>`) is also a placeholder for a real logo mark, not just the nav brand text | text-only "Kalarigram Gurukulam" |
+| Favicon | `index.html` `<head>` | still an emoji data-URI placeholder — the real logo (`public/logo.jpeg`) is used in the nav brand as of this commit, but not yet as the favicon; a cropped/square version of the logo should replace the emoji before launch |
 | Final copy review | Hero, Vision, Progress, Donate, Contact sections | placeholder copy drawn from prior project research |
 | Custom domain | DNS / host settings | none configured — site is reachable only at the Netlify/Vercel-issued URL until this is done |
 | Placeholder disclosure text (3 elements) | index.html, elements with class `placeholder-notice` | remove all three once real credentials/content are in place |

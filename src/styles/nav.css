@@ -25,9 +25,11 @@
 }
 
 .nav__logo {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
+  height: 56px;
+  width: 48px;
+  object-fit: cover;
+  object-position: left center;
+  border-radius: 4px;
 }
 
 .nav__links {
