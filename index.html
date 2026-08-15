@@ -20,8 +20,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/gurukulam/assets/index-BKQiFSx4.js"></script>
-  <link rel="stylesheet" crossorigin href="/gurukulam/assets/index-DSSm16UC.css">
+  <script type="module" crossorigin src="/gurukulam/assets/index-DlbQfVu_.js"></script>
+  <link rel="stylesheet" crossorigin href="/gurukulam/assets/index-B5JQv3cp.css">
 </head>
 <body>
   <nav class="nav" id="nav">
@@ -34,6 +34,7 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links">
+        <li><a href="#story">Story</a></li>
         <li><a href="#vision">Vision</a></li>
         <li><a href="#progress">Progress</a></li>
         <li><a href="#gallery">Gallery</a></li>
@@ -44,6 +45,25 @@
   </nav>
   <main>
   <header class="hero" id="hero">
+    <div class="hero__carousel" aria-hidden="true">
+      <img src="/gurukulam/images/guruji_talking_to_students.jpg" alt="" class="hero__slide is-active" />
+      <img src="/gurukulam/images/guru_initiation.jpg" alt="" class="hero__slide" />
+      <img src="/gurukulam/images/gurus_with_students.jpg" alt="" class="hero__slide" />
+      <img src="/gurukulam/images/guruji_with_students_weapons.jpg" alt="" class="hero__slide" />
+      <img src="/gurukulam/images/training_kalari.jpg" alt="" class="hero__slide" />
+      <img src="/gurukulam/images/vaal-payattu_large.jpg" alt="" class="hero__slide" />
+      <div class="hero__overlay"></div>
+    </div>
+    <button type="button" class="hero__arrow hero__arrow--prev" aria-label="Previous slide">&#8249;</button>
+    <button type="button" class="hero__arrow hero__arrow--next" aria-label="Next slide">&#8250;</button>
+    <div class="hero__dots" role="tablist" aria-label="Slide navigation">
+      <button type="button" class="hero__dot is-active" role="tab" aria-label="Go to slide 1"></button>
+      <button type="button" class="hero__dot" role="tab" aria-label="Go to slide 2"></button>
+      <button type="button" class="hero__dot" role="tab" aria-label="Go to slide 3"></button>
+      <button type="button" class="hero__dot" role="tab" aria-label="Go to slide 4"></button>
+      <button type="button" class="hero__dot" role="tab" aria-label="Go to slide 5"></button>
+      <button type="button" class="hero__dot" role="tab" aria-label="Go to slide 6"></button>
+    </div>
     <div class="container hero__inner">
       <p class="hero__eyebrow">GVS Ayurveda Gurukulam &middot; Calicut, Kerala</p>
       <h1 class="hero__headline">A Gurukulam for Kalaripayattu, Ayurveda &amp; the next generation of healers.</h1>
@@ -54,87 +74,289 @@
       </div>
     </div>
   </header>
-  <section class="section vision" id="vision">
+  <section class="section story" id="story">
     <div class="container">
       <h2 class="section__title">Our Story</h2>
-      <div class="vision__grid">
-        <div class="vision__block">
-          <h3>1952 — Hindustan Kalari Sangam</h3>
-          <p>Founded in Calicut by Veerasree Sami Gurukkal, preserving the discipline of Kalaripayattu for a new generation.</p>
+      <div class="story__timeline">
+        <div class="story__era">
+          <div class="story__marker" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="4" x2="20" y2="20" />
+              <line x1="20" y1="4" x2="4" y2="20" />
+              <circle cx="4" cy="4" r="1.3" fill="currentColor" stroke="none" />
+              <circle cx="20" cy="4" r="1.3" fill="currentColor" stroke="none" />
+              <circle cx="4" cy="20" r="1.3" fill="currentColor" stroke="none" />
+              <circle cx="20" cy="20" r="1.3" fill="currentColor" stroke="none" />
+            </svg>
+          </div>
+          <div class="story__era-content">
+            <p class="story__era-year">1952</p>
+            <h3>Hindustan Kalari Sangam</h3>
+            <p>Founded in Calicut by Veerasree Sami Gurukkal, preserving the discipline of Kalaripayattu for a new generation.</p>
+          </div>
         </div>
-        <div class="vision__block">
-          <h3>2010 — Kalarigram</h3>
-          <p>Lakshman Gurukkal founds Kalarigram as an offshoot of Hindustan Kalari Sangam, carrying the tradition forward through training, Kalari Marma Chikitsa treatment, yoga, and meditation.</p>
+        <div class="story__era">
+          <div class="story__marker" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21c-4-2-7-6-7-10a7 7 0 0 1 14 0c0 4-3 8-7 10z" />
+              <path d="M12 12c-2-3-2-6 0-9" />
+              <path d="M12 12c2-3 2-6 0-9" />
+            </svg>
+          </div>
+          <div class="story__era-content">
+            <p class="story__era-year">2010</p>
+            <h3>Kalarigram</h3>
+            <p>Lakshman Gurukkal founds Kalarigram as an offshoot of Hindustan Kalari Sangam, carrying the tradition forward through training, Kalari Marma Chikitsa treatment, yoga, and meditation.</p>
+          </div>
         </div>
-        <div class="vision__block">
-          <h3>Today — GVS Ayurveda Gurukulam</h3>
-          <p>We're building a residential Gurukulam in Calicut that unites three things under one roof: Kalaripayattu training, an Ayurveda medical college on the NCISM Gurukulam pathway, and an attached teaching hospital — reviving the classical model where tradition and healing were taught together.</p>
+        <div class="story__era">
+          <div class="story__marker" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 21V10l8-6 8 6v11" />
+              <path d="M9 21v-6h6v6" />
+              <path d="M4 10h16" />
+            </svg>
+          </div>
+          <div class="story__era-content">
+            <p class="story__era-year">Today</p>
+            <h3>GVS Ayurveda Gurukulam</h3>
+            <p>We're building a residential Gurukulam in Calicut that unites three things under one roof: Kalaripayattu training, an Ayurveda medical college on the NCISM Gurukulam pathway, and an attached teaching hospital — reviving the classical model where tradition and healing were taught together.</p>
+          </div>
         </div>
       </div>
-      <p class="vision__why">Why now? The Government of India's push to revive Gurukula-style Ayurveda education gives this model a real academic pathway for the first time in decades. Why Calicut? It's where this tradition has lived for over 70 years — and where Kerala's own history of Ayurveda institution-building runs deepest.</p>
+      <p class="story__why">Why now? The Government of India's push to revive Gurukula-style Ayurveda education gives this model a real academic pathway for the first time in decades. Why Calicut? It's where this tradition has lived for over 70 years — and where Kerala's own history of Ayurveda institution-building runs deepest.</p>
+    </div>
+  </section>
+  <section class="section our-vision" id="vision">
+    <div class="container">
+      <p class="our-vision__eyebrow">Our Vision</p>
+      <h2 class="section__title">What We're Building Toward</h2>
+
+      <div class="our-vision__layout">
+        <div class="our-vision__signature">
+          <div class="our-vision__wordmark" aria-hidden="true">
+            <span class="our-vision__word our-vision__word--from">śastra</span>
+            <svg class="our-vision__word-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 4v16" />
+              <path d="M6 14l6 6 6-6" />
+            </svg>
+            <span class="our-vision__word our-vision__word--to">ś<span class="our-vision__diacritic">ā</span>stra</span>
+          </div>
+          <p class="our-vision__signature-caption">
+            The discipline of the blade becomes the discipline of the mind.
+            <span class="our-vision__attribution">— a teaching from Guruji, passed down through Kalarigram</span>
+          </p>
+        </div>
+
+        <div class="our-vision__side">
+          <div class="our-vision__difference">
+            <p class="our-vision__difference-lede">Modern education measures a student by grades. We measure by character.</p>
+            <ul class="our-vision__chip-list">
+              <li><span class="our-vision__chip-from">Grades</span><span class="our-vision__chip-arrow" aria-hidden="true">&#8594;</span><span class="our-vision__chip-to">Character</span></li>
+              <li><span class="our-vision__chip-from">Rote learning</span><span class="our-vision__chip-arrow" aria-hidden="true">&#8594;</span><span class="our-vision__chip-to">Practical wisdom</span></li>
+              <li><span class="our-vision__chip-from">Classroom</span><span class="our-vision__chip-arrow" aria-hidden="true">&#8594;</span><span class="our-vision__chip-to">Way of life</span></li>
+            </ul>
+          </div>
+
+          <p class="our-vision__mission">We're not just training martial artists or educating doctors — we're building people whose steadiness carries into how they heal, lead, and treat others.</p>
+        </div>
+      </div>
     </div>
   </section>
   <section class="section progress" id="progress">
     <div class="container">
+      <p class="progress__eyebrow">Where We Stand Today</p>
       <h2 class="section__title">Project Status</h2>
-      <div class="progress__cards">
-        <div class="status-card">
-          <p class="status-card__label">Our Campus</p>
-          <p class="status-card__body">Our campus in Calicut includes an existing, Kerala-licensed Ayurvedic hospital — the foundation for the college and Gurukulam to come.</p>
+
+      <div class="progress__diagram">
+        <div class="progress__branches">
+          <div class="progress__branch">
+            <span class="progress__tag progress__tag--underway">Underway</span>
+            <h3>Expanded Teaching Hospital</h3>
+            <p>Growing bed capacity and clinical departments to support the medical college's training needs.</p>
+          </div>
+          <div class="progress__branch">
+            <span class="progress__tag progress__tag--planned">Planned</span>
+            <h3>Residential Gurukulam Campus</h3>
+            <p>Housing and training halls for students living and studying together, guru-style.</p>
+          </div>
+          <div class="progress__branch">
+            <span class="progress__tag progress__tag--planned">Planned</span>
+            <h3>NCISM-Track Ayurveda College</h3>
+            <p>A full medical college on the Gurukula pathway, built beside the hospital that will teach in it.</p>
+          </div>
         </div>
-        <div class="status-card">
-          <p class="status-card__label">Existing Hospital</p>
-          <p class="status-card__body">The site already has an operating Ayurvedic hospital with a good bed count, ready to grow into the Gurukulam's teaching hospital.</p>
+        <div class="progress__connector" aria-hidden="true"></div>
+        <div class="progress__foundation">
+          <span class="progress__tag progress__tag--existing">Existing Foundation</span>
+          <h3>Licensed Ayurvedic Hospital</h3>
+          <p>Already open and treating patients on our Calicut campus today.</p>
         </div>
       </div>
+
       <div class="fundraise">
+        <p class="fundraise__percent"><span id="fundraise-percent-value">0</span>%</p>
+        <p class="fundraise__percent-label">raised toward our goal</p>
+        <div class="fundraise__bar">
+          <div class="fundraise__bar-fill" id="fundraise-bar-fill"></div>
+        </div>
         <div class="fundraise__labels">
           <span id="fundraise-raised-label">Raised so far</span>
           <span id="fundraise-goal-label">Goal</span>
         </div>
-        <div class="fundraise__bar">
-          <div class="fundraise__bar-fill" id="fundraise-bar-fill"></div>
-        </div>
-        <p class="fundraise__note placeholder-notice">Placeholder figures — update with real fundraising totals before launch.</p>
       </div>
     </div>
   </section>
   <section class="section gallery" id="gallery">
     <div class="container">
       <h2 class="section__title">Gallery</h2>
-      <p class="section__intro placeholder-notice">Photos are placeholders for now — real images of training, the campus, and the hospital go here before launch.</p>
-      <div class="gallery__grid">
-        <div class="gallery__placeholder">Training at Kalarigram</div>
-        <div class="gallery__placeholder">The campus in Calicut</div>
-        <div class="gallery__placeholder">The existing hospital</div>
-        <div class="gallery__placeholder">Gurukkal &amp; students</div>
+      <p class="section__intro">A look at daily training at Kalarigram, traditional healing treatments, and the land in Calicut where the Gurukulam is taking shape.</p>
+
+      <div class="gallery__tabs" role="tablist" aria-label="Gallery category">
+        <button type="button" class="gallery__tab is-active" role="tab" aria-selected="true" aria-controls="gallery-panel-training" id="gallery-tab-training">Training</button>
+        <button type="button" class="gallery__tab" role="tab" aria-selected="false" aria-controls="gallery-panel-treatment" id="gallery-tab-treatment">Healing</button>
+        <button type="button" class="gallery__tab" role="tab" aria-selected="false" aria-controls="gallery-panel-land" id="gallery-tab-land">The Land</button>
+      </div>
+
+      <div class="gallery__panel" id="gallery-panel-training" role="tabpanel" aria-labelledby="gallery-tab-training">
+        <div class="gallery__masonry">
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/training_gallery/training_1.avif" data-caption="Group training session">
+            <img src="/gurukulam/images/training_gallery/training_1.avif" alt="Group training session at Kalarigram" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/training_gallery/training_5.avif" data-caption="Salutation before training begins">
+            <img src="/gurukulam/images/training_gallery/training_5.avif" alt="Students saluting before training begins" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/training_gallery/training_2.avif" data-caption="A quiet moment before practice">
+            <img src="/gurukulam/images/training_gallery/training_2.avif" alt="A quiet moment before practice, guru and students" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/training_gallery/training_6.avif" data-caption="Weapon practice, one-on-one">
+            <img src="/gurukulam/images/training_gallery/training_6.avif" alt="Solo weapon practice with a staff" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/training_gallery/training_7.jpg" data-caption="Sparring practice with sword and shield">
+            <img src="/gurukulam/images/training_gallery/training_7.jpg" alt="Sparring practice with sword and shield" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/training_gallery/training_8.jpg" data-caption="Group stretching before training">
+            <img src="/gurukulam/images/training_gallery/training_8.jpg" alt="Group stretching before training" loading="lazy" />
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery__panel" id="gallery-panel-treatment" role="tabpanel" aria-labelledby="gallery-tab-treatment" hidden>
+        <div class="gallery__masonry">
+          <button type="button" class="gallery__tile gallery__tile--video" data-type="video" data-src="/gurukulam/images/treatment_gallery/shatruji_healing.mp4" data-caption="Marma Chikitsa treatment session">
+            <img src="/gurukulam/images/treatment_gallery/shatruji_healing_poster.jpg" alt="Marma Chikitsa treatment session, video preview" loading="lazy" />
+            <span class="gallery__play" aria-hidden="true">&#9654;</span>
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--video" data-type="video" data-src="/gurukulam/images/treatment_gallery/sanju_healing.mp4" data-caption="Traditional healing treatment">
+            <img src="/gurukulam/images/treatment_gallery/sanju_healing_poster.jpg" alt="Traditional healing treatment, video preview" loading="lazy" />
+            <span class="gallery__play" aria-hidden="true">&#9654;</span>
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/treatment_gallery/treatment_1.webp" data-caption="Traditional foot treatment and bandaging">
+            <img src="/gurukulam/images/treatment_gallery/treatment_1.webp" alt="Traditional foot treatment and bandaging" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/treatment_gallery/treatment_2.webp" data-caption="Hand treatment, close up">
+            <img src="/gurukulam/images/treatment_gallery/treatment_2.webp" alt="Hand treatment, close up" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/treatment_gallery/treatment_3.webp" data-caption="A bandaged hand after treatment">
+            <img src="/gurukulam/images/treatment_gallery/treatment_3.webp" alt="A bandaged hand after treatment" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/treatment_gallery/treatment_4.webp" data-caption="Herbal poultice applied to the knee">
+            <img src="/gurukulam/images/treatment_gallery/treatment_4.webp" alt="Herbal poultice applied to the knee" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/treatment_gallery/treatment_5.webp" data-caption="Foot wrapped in traditional bandaging">
+            <img src="/gurukulam/images/treatment_gallery/treatment_5.webp" alt="Foot wrapped in traditional bandaging" loading="lazy" />
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery__panel" id="gallery-panel-land" role="tabpanel" aria-labelledby="gallery-tab-land" hidden>
+        <p class="gallery__group-label">The Land Today</p>
+        <div class="gallery__masonry">
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/land_gallery/land_photo_1.jpg" data-caption="Aerial view of the campus grounds">
+            <img src="/gurukulam/images/land_gallery/land_photo_1.jpg" alt="Aerial view of the campus grounds" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--video" data-type="video" data-src="/gurukulam/images/land_gallery/land_video_1.mp4" data-caption="Flyover of the property">
+            <img src="/gurukulam/images/land_gallery/land_video_1_poster.jpg" alt="Flyover of the property, video preview" loading="lazy" />
+            <span class="gallery__play" aria-hidden="true">&#9654;</span>
+          </button>
+          <button type="button" class="gallery__tile" data-type="image" data-src="/gurukulam/images/land_gallery/land_photo_2.jpg" data-caption="The land, framed by Kerala's hills">
+            <img src="/gurukulam/images/land_gallery/land_photo_2.jpg" alt="The land, framed by Kerala's hills" loading="lazy" />
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--video" data-type="video" data-src="/gurukulam/images/land_gallery/land_video_2.mp4" data-caption="A closer look at the existing buildings">
+            <img src="/gurukulam/images/land_gallery/land_video_2_poster.jpg" alt="A closer look at the existing buildings, video preview" loading="lazy" />
+            <span class="gallery__play" aria-hidden="true">&#9654;</span>
+          </button>
+        </div>
+
+        <p class="gallery__group-label gallery__group-label--vision">The Vision <span class="gallery__group-note">— AI-generated concept renders of the planned campus, not real photos</span></p>
+        <div class="gallery__masonry">
+          <button type="button" class="gallery__tile gallery__tile--concept" data-type="image" data-src="/gurukulam/images/land_gallery/plan_training_hall.jpg" data-caption="Concept: Training hall, designed for the monsoon">
+            <img src="/gurukulam/images/land_gallery/plan_training_hall.jpg" alt="Concept render: training hall designed for the monsoon" loading="lazy" />
+            <span class="gallery__concept-tag">Concept</span>
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--concept" data-type="image" data-src="/gurukulam/images/land_gallery/plan_fitness_area.jpg" data-caption="Concept: Fitness and strength training area">
+            <img src="/gurukulam/images/land_gallery/plan_fitness_area.jpg" alt="Concept render: fitness and strength training area" loading="lazy" />
+            <span class="gallery__concept-tag">Concept</span>
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--concept" data-type="image" data-src="/gurukulam/images/land_gallery/plan_malkhamb_area.jpg" data-caption="Concept: Malkhamb and traditional training poles">
+            <img src="/gurukulam/images/land_gallery/plan_malkhamb_area.jpg" alt="Concept render: malkhamb and traditional training poles" loading="lazy" />
+            <span class="gallery__concept-tag">Concept</span>
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--concept" data-type="image" data-src="/gurukulam/images/land_gallery/plan_water_therapy.jpg" data-caption="Concept: Water therapy pool">
+            <img src="/gurukulam/images/land_gallery/plan_water_therapy.jpg" alt="Concept render: water therapy pool" loading="lazy" />
+            <span class="gallery__concept-tag">Concept</span>
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--concept" data-type="image" data-src="/gurukulam/images/land_gallery/plan_sports_field.jpg" data-caption="Concept: Sports field and running track">
+            <img src="/gurukulam/images/land_gallery/plan_sports_field.jpg" alt="Concept render: sports field and running track" loading="lazy" />
+            <span class="gallery__concept-tag">Concept</span>
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--concept" data-type="image" data-src="/gurukulam/images/land_gallery/plan_student_cottage.jpg" data-caption="Concept: Student cottage">
+            <img src="/gurukulam/images/land_gallery/plan_student_cottage.jpg" alt="Concept render: student cottage" loading="lazy" />
+            <span class="gallery__concept-tag">Concept</span>
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--concept" data-type="image" data-src="/gurukulam/images/land_gallery/plan_kitchen_dining.jpg" data-caption="Concept: Kitchen and dining hall">
+            <img src="/gurukulam/images/land_gallery/plan_kitchen_dining.jpg" alt="Concept render: kitchen and dining hall" loading="lazy" />
+            <span class="gallery__concept-tag">Concept</span>
+          </button>
+          <button type="button" class="gallery__tile gallery__tile--concept" data-type="image" data-src="/gurukulam/images/land_gallery/plan_terrain.jpg" data-caption="Concept: Terraced pathways through the grounds">
+            <img src="/gurukulam/images/land_gallery/plan_terrain.jpg" alt="Concept render: terraced pathways through the grounds" loading="lazy" />
+            <span class="gallery__concept-tag">Concept</span>
+          </button>
+        </div>
       </div>
     </div>
   </section>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox__scrim" data-lightbox-close></div>
+    <button type="button" class="lightbox__close" aria-label="Close" data-lightbox-close>&#10005;</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="Previous">&#8249;</button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" aria-label="Next">&#8250;</button>
+    <div class="lightbox__stage">
+      <img class="lightbox__image" id="lightbox-image" alt="" hidden />
+      <video class="lightbox__video" id="lightbox-video" controls playsinline hidden></video>
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+  </div>
   <section class="section donate" id="donate">
     <div class="container">
       <h2 class="section__title">Support the Gurukulam</h2>
-      <p class="donate__intro">Every contribution goes toward the campus, the hospital upgrade, and building the college. Choose whichever option works for you.</p>
-      <div class="donate__options">
-        <div class="donate__option">
-          <h3>India</h3>
-          <p>Donate via Razorpay — UPI, cards, netbanking.</p>
-          <button type="button" class="btn btn-primary" disabled>Donate with Razorpay</button>
-        </div>
-        <div class="donate__option">
-          <h3>International / NRI</h3>
-          <p>Donate via PayPal from anywhere in the world.</p>
-          <button type="button" class="btn btn-primary" disabled>Donate with PayPal</button>
-        </div>
+      <p class="donate__intro">Online payments are launching soon. For now, reach out directly and we'll personally help you contribute — every rupee goes toward the campus, the hospital upgrade, and building the college.</p>
+      <div class="donate__contact">
+        <a href="https://wa.me/918637632916?text=Hi%2C%20I%27d%20like%20to%20know%20how%20I%20can%20contribute%20to%20the%20Gurukulam." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3.1 1.3 5 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.7 15 3.2 13.5 3.2 12 3.2 7.1 7.1 3.2 12 3.2S20.8 7.1 20.8 12 16.9 20.2 12 20.2zm5.3-6.9c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z" /></svg>
+          Message us on WhatsApp
+        </a>
+        <a href="tel:+918637632916" class="btn btn-outline">Call +91 86376 32916</a>
       </div>
-      <p class="donate__note placeholder-notice">Kalarigram is a registered Trust. Payment IDs above are placeholders — replace with live Razorpay and PayPal button IDs before launch.</p>
+      <p class="donate__note">Kalarigram is a registered Trust.</p>
     </div>
   </section>
   <section class="section contact" id="contact">
     <div class="container">
       <h2 class="section__title">Get Involved</h2>
       <p class="section__intro">Questions, partnership ideas, or want to volunteer? Send us a message.</p>
-      <form id="contact-form" class="contact__form" action="https://formspree.io/f/PLACEHOLDER_FORM_ID" method="POST" novalidate>
+      <form id="contact-form" class="contact__form" novalidate>
         <div class="form-row">
           <label for="contact-name">Name</label>
           <input type="text" id="contact-name" name="name" required />
@@ -148,7 +370,8 @@
           <textarea id="contact-message" name="message" rows="4" required></textarea>
         </div>
         <p id="contact-form-error" class="contact__error" role="alert" hidden></p>
-        <button type="button" class="btn btn-primary" disabled>Send Message</button>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="contact__form-note">Clicking send opens WhatsApp with your message ready to go.</p>
       </form>
     </div>
   </section>
