@@ -1,5 +1,5 @@
-const FUNDRAISE_RAISED = 500000; // PLACEHOLDER VALUE — replace with real amount (INR) before launch
-const FUNDRAISE_GOAL = 10000000; // PLACEHOLDER VALUE — replace with real goal (INR) before launch
+const FUNDRAISE_RAISED = 5000000; // ₹50 lakh
+const FUNDRAISE_GOAL = 400000000; // ₹40 crore
 
 function formatINR(amount) {
   return '₹' + amount.toLocaleString('en-IN');
