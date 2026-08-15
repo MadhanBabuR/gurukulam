@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
-// Dev server stays at root; only the production build (deployed to GitHub
-// Pages as a project site) needs the /gurukulam/ subpath prefix.
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/gurukulam/' : '/',
+// Served from the root of the custom domain (gvsayurvedagurukulam.com),
+// so both dev and production builds use the root base path.
+export default defineConfig(() => ({
+  base: '/',
 }));
