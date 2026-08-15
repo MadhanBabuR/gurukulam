@@ -1,0 +1,107 @@
+.story__timeline {
+  position: relative;
+  display: flex;
+  gap: var(--space-4);
+  margin: var(--space-5) 0;
+}
+
+.story__timeline::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  left: calc(16.666% + 32px);
+  right: calc(16.666% + 32px);
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-terracotta), var(--color-gold));
+  opacity: 0.5;
+}
+
+.story__era {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.story__marker {
+  position: relative;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--color-cream);
+  border: 2px solid var(--color-terracotta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-2);
+}
+
+.story__marker svg {
+  width: 28px;
+  height: 28px;
+}
+
+.story__era-year {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  margin-bottom: 4px;
+}
+
+.story__era-content h3 {
+  font-size: 18px;
+  color: var(--color-ink);
+  margin-bottom: var(--space-1);
+}
+
+.story__era-content p {
+  color: var(--color-text-muted);
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .story__timeline {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .story__timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 31px;
+    right: auto;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(180deg, var(--color-gold), var(--color-terracotta), var(--color-gold));
+  }
+
+  .story__era {
+    flex-direction: row;
+    text-align: left;
+    gap: var(--space-3);
+  }
+
+  .story__marker {
+    margin-bottom: 0;
+  }
+
+  .story__era-content {
+    padding-top: var(--space-1);
+  }
+}
+
+.story__why {
+  font-size: 16px;
+  color: var(--color-ink);
+  max-width: 720px;
+  border-left: 3px solid var(--color-terracotta);
+  padding-left: var(--space-3);
+}

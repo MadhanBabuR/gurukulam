@@ -1,47 +1,162 @@
-.progress {
-  background: var(--color-cream-alt);
-}
-
-.progress__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--space-3);
-  margin: var(--space-4) 0;
-}
-
-.status-card {
-  background: var(--color-cream);
-  border: 1px solid var(--color-hairline);
-  border-radius: 6px;
-  padding: var(--space-3);
-}
-
-.status-card__label {
+.progress__eyebrow {
   font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-terracotta);
   margin-bottom: var(--space-1);
 }
 
-.status-card__body {
-  font-size: 14px;
-  color: var(--color-text-muted);
+/* Foundation & growth diagram */
+
+.progress__diagram {
+  margin: var(--space-5) 0;
+  background: var(--color-terracotta-dark);
+  border-radius: 12px;
+  padding: var(--space-4);
 }
 
-.fundraise__labels {
-  display: flex;
-  justify-content: space-between;
+.progress__branches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  position: relative;
+  z-index: 1;
+}
+
+.progress__branch {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: var(--space-3);
+}
+
+.progress__branch h3 {
+  font-size: 17px;
+  color: #fff;
+  margin: 8px 0 6px;
+}
+
+.progress__branch p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.progress__tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.progress__tag--underway {
+  background: var(--color-gold);
+  color: var(--color-terracotta-dark);
+}
+
+.progress__tag--planned {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.progress__tag--existing {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-terracotta-dark);
+}
+
+.progress__connector {
+  position: relative;
+  height: 28px;
+}
+
+.progress__connector::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 16.666%;
+  right: 16.666%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.progress__connector::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.progress__foundation {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 3px solid var(--color-gold);
+  border-radius: 8px;
+  padding: var(--space-3) var(--space-4);
+}
+
+.progress__foundation h3 {
+  font-size: 20px;
+  color: #fff;
+  margin: 8px 0 6px;
+}
+
+.progress__foundation p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 700px) {
+  .progress__branches {
+    grid-template-columns: 1fr;
+  }
+
+  .progress__connector {
+    display: none;
+  }
+
+  .progress__foundation {
+    margin-top: var(--space-3);
+  }
+}
+
+/* Fundraising bar */
+
+.fundraise {
+  margin-top: var(--space-5);
+  text-align: center;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fundraise__percent {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6vw, 56px);
+  font-weight: 700;
+  color: var(--color-terracotta);
+  line-height: 1;
+}
+
+.fundraise__percent-label {
   font-size: 13px;
-  color: var(--color-ink);
-  margin-bottom: 6px;
-  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
 }
 
 .fundraise__bar {
-  height: 12px;
+  height: 14px;
   background: #e0d9c8;
   border-radius: 8px;
   overflow: hidden;
@@ -49,9 +164,18 @@
 
 .fundraise__bar-fill {
   height: 100%;
-  background: var(--color-terracotta);
+  background: linear-gradient(90deg, var(--color-terracotta), var(--color-gold));
   width: 0%;
   transition: width 0.6s ease;
+}
+
+.fundraise__labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--color-ink);
+  margin-top: 8px;
+  font-weight: 600;
 }
 
 .fundraise__note {

@@ -39,3 +39,13 @@
   color: #b91c1c;
   font-size: 13px;
 }
+
+.contact__form .btn-primary {
+  align-self: flex-start;
+}
+
+.contact__form-note {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: -4px;
+}

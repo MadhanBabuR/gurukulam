@@ -1,25 +1,160 @@
-.vision__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--space-4);
-  margin: var(--space-4) 0;
+.our-vision {
+  background: var(--color-cream-alt);
 }
 
-.vision__block h3 {
-  font-size: 18px;
+.our-vision__eyebrow {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--color-terracotta);
   margin-bottom: var(--space-1);
 }
 
-.vision__block p {
+/* Two-column layout: wordmark signature | difference + mission */
+
+.our-vision__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  align-items: center;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 860px) {
+  .our-vision__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+/* Signature: the sastra -> sastra wordmark */
+
+.our-vision__signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.our-vision__wordmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.our-vision__word {
+  font-family: var(--font-display);
+  line-height: 1;
+}
+
+.our-vision__word--from {
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 700;
+  color: var(--color-terracotta-dark);
+}
+
+.our-vision__word-arrow {
+  width: 18px;
+  height: 18px;
+  color: var(--color-gold);
+}
+
+.our-vision__word--to {
+  font-size: clamp(34px, 5.5vw, 52px);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--color-gold);
+}
+
+.our-vision__diacritic {
+  display: inline-block;
+  line-height: 0.72;
+  color: var(--color-terracotta-dark);
+  background: rgba(201, 161, 59, 0.3);
+  border-radius: 6px;
+  padding: 0.18em 0.06em 0.1em;
+}
+
+.our-vision__signature-caption {
+  margin-top: var(--space-2);
+  font-size: 16px;
+  color: var(--color-ink);
+  max-width: 400px;
+}
+
+.our-vision__attribution {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-body);
+  font-size: 13px;
   color: var(--color-text-muted);
+}
+
+/* Side column: The Gurukulam Difference + mission */
+
+.our-vision__side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.our-vision__difference-lede {
+  font-size: 17px;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-2);
+}
+
+.our-vision__chip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-vision__chip-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-hairline);
+  font-family: var(--font-body);
   font-size: 15px;
 }
 
-.vision__why {
-  font-size: 16px;
+.our-vision__chip-list li:last-child {
+  border-bottom: none;
+}
+
+.our-vision__chip-from {
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+  text-decoration-color: rgba(107, 86, 68, 0.4);
+}
+
+.our-vision__chip-arrow {
+  color: var(--color-terracotta);
+}
+
+.our-vision__chip-to {
   color: var(--color-ink);
-  max-width: 720px;
+  font-weight: 600;
+}
+
+.our-vision__mission {
+  font-family: var(--font-display);
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.45;
+  color: var(--color-ink);
   border-left: 3px solid var(--color-terracotta);
   padding-left: var(--space-3);
+}
+
+@media (max-width: 860px) {
+  .our-vision__side {
+    text-align: left;
+  }
 }

@@ -13,29 +13,10 @@
   margin-bottom: var(--space-4);
 }
 
-.donate__options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-3);
-}
-
-.donate__option {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 6px;
-  padding: var(--space-3);
-}
-
-.donate__option h3 {
-  color: var(--color-gold);
-  font-size: 16px;
-  margin-bottom: 6px;
-}
-
-.donate__option p {
-  color: #cbd6de;
-  font-size: 14px;
-  margin-bottom: var(--space-2);
+.donate__contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
 }
 
 .donate__note {
@@ -44,14 +25,31 @@
   margin-top: var(--space-3);
 }
 
-.donate .btn-primary {
-  background: var(--color-gold);
-  color: var(--color-navy);
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: #06210f;
   font-weight: 700;
   border: none;
   cursor: pointer;
 }
 
-.donate .btn-primary:hover {
-  background: #b8912f;
+.btn-whatsapp svg {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-whatsapp:hover {
+  background: #1fb958;
+}
+
+.donate .btn-outline {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.donate .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
 }

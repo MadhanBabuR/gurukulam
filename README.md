@@ -34,8 +34,7 @@ sharing the live URL publicly:
 
 | What | Where | Placeholder value |
 |---|---|---|
-| Razorpay integration | `index.html`, Donate section (India card) | currently a static, disabled `<button>` with no Razorpay script wired up — swap for the real `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="...">` embed (see Task 6 of the implementation plan for the exact snippet) once a live Razorpay button ID exists |
-| PayPal hosted button ID | `index.html`, Donate section, `hosted_button_id` input value | `PLACEHOLDER_PAYPAL_BUTTON_ID` |
+| Razorpay / PayPal integration | `index.html`, Donate section | not live yet. As an interim, the Donate section links to a real WhatsApp number (`wa.me/918637632916`) and `tel:+918637632916` so people can still reach out — this is NOT a placeholder, it's the intended launch behavior until real payment integration is ready. Once Razorpay/PayPal are live, add them back alongside (or in place of) the WhatsApp/Call CTA — see Task 6 of the implementation plan for the Razorpay embed snippet |
 | Formspree integration | `index.html`, Contact section | the "Send Message" button is currently a static, disabled `<button>` — no submission happens. Re-enable it (change `type="button" disabled` back to `type="submit"`) once a real Formspree form ID replaces `PLACEHOLDER_FORM_ID` in the form's `action` attribute |
 | Fundraising totals | `src/js/progressBar.js`, `FUNDRAISE_RAISED` / `FUNDRAISE_GOAL` | `0` / `10000000` |
 | Real photos | `index.html`, Gallery section — replace the four `.gallery__placeholder` divs with `<img>` tags once photos exist | 4 placeholder tiles |

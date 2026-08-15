@@ -3,3 +3,9 @@ dist/
 .superpowers/
 .DS_Store
 *.log
+
+# Raw source assets (large originals) — processed/compressed copies live in public/
+/images/
+/logo/
+/notebooklm-sources/
+/storm-reports/
