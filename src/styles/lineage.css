@@ -34,6 +34,32 @@
   margin: 0 auto;
 }
 
+/* Full-bleed portrait photo — a single visual chapter-opener before the prose begins */
+
+.lineage-portrait {
+  margin: 0;
+}
+
+.lineage-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: cover;
+  object-position: center 62%;
+}
+
+.lineage-portrait figcaption {
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--color-text-muted);
+  background: var(--color-cream);
+}
+
 /* Shared prose block used across several sections */
 
 .lineage-prose {
