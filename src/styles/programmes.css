@@ -1,0 +1,146 @@
+/* Programmes page styles */
+
+.programme__eyebrow {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+  margin-bottom: var(--space-1);
+}
+
+.programme__prose {
+  max-width: 680px;
+  color: var(--color-ink);
+  margin-top: var(--space-2);
+}
+
+.programme__prose + .programme__prose {
+  margin-top: var(--space-2);
+}
+
+.programme__legal-term {
+  color: var(--color-terracotta-dark);
+}
+
+/* Hero header block */
+
+.programme-hero {
+  padding-bottom: var(--space-4);
+}
+
+.programme-hero__title {
+  font-size: clamp(32px, 5vw, 48px);
+  color: var(--color-ink);
+  margin-bottom: var(--space-2);
+}
+
+.programme-hero__intro {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  max-width: 640px;
+}
+
+/* Legal framework section */
+
+.programme-legal {
+  background: var(--color-cream-alt);
+}
+
+/* Two-stage cards */
+
+.programme-stages__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+
+.programme-stage {
+  background: var(--color-cream);
+  border: 1px solid var(--color-hairline);
+  border-top: 3px solid var(--color-terracotta);
+  border-radius: 8px;
+  padding: var(--space-3);
+}
+
+.programme-stage__tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--color-gold);
+  color: var(--color-terracotta-dark);
+}
+
+.programme-stage h3 {
+  font-size: 18px;
+  color: var(--color-ink);
+  margin: 10px 0 6px;
+}
+
+.programme-stage p {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 700px) {
+  .programme-stages__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Three streams section — reuses .our-vision__stream-list from vision.css */
+
+.programme-streams {
+  background: var(--color-cream-alt);
+}
+
+.programme-streams__list {
+  max-width: 640px;
+  margin-top: var(--space-3);
+}
+
+/* Where students practise */
+
+.programme-practice {
+  background: var(--color-cream);
+}
+
+/* Interest form section — reuses .contact__form / .form-row from contact.css */
+
+.programme-interest {
+  background: var(--color-cream-alt);
+}
+
+.programme__optional {
+  font-weight: 400;
+  color: var(--color-text-muted);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* Closing note */
+
+.programme-closing {
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-4);
+}
+
+.programme-closing__note {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  max-width: 640px;
+}
+
+.programme-closing__note a {
+  color: var(--color-terracotta);
+  text-decoration: underline;
+}

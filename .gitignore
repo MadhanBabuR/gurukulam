@@ -3,6 +3,7 @@ dist/
 .superpowers/
 .DS_Store
 *.log
+/backups/
 
 # Raw source assets (large originals) — processed/compressed copies live in public/
 /images/

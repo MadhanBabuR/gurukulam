@@ -1,6 +1,7 @@
 import './styles/main.css';
 import './js/progressBar.js';
 import './js/contactForm.js';
+import './js/interestForm.js';
 import './js/footer.js';
 import './js/nav.js';
 import './js/heroCarousel.js';

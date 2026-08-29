@@ -29,7 +29,7 @@
   }
 }
 
-/* Signature: the sastra -> sastra wordmark */
+/* Signature: sastra + shastra converging into swasthyam */
 
 .our-vision__signature {
   display: flex;
@@ -38,11 +38,22 @@
   text-align: center;
 }
 
-.our-vision__wordmark {
+.our-vision__flow {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+}
+
+.our-vision__flow-top {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.our-vision__flow-dot {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 3vw, 26px);
+  color: var(--color-text-muted);
 }
 
 .our-vision__word {
@@ -50,23 +61,35 @@
   line-height: 1;
 }
 
-.our-vision__word--from {
-  font-size: clamp(26px, 4vw, 40px);
+.our-vision__word--sastra {
+  font-size: clamp(24px, 3.6vw, 34px);
   font-weight: 700;
   color: var(--color-terracotta-dark);
 }
 
-.our-vision__word-arrow {
-  width: 18px;
-  height: 18px;
-  color: var(--color-gold);
-}
-
-.our-vision__word--to {
-  font-size: clamp(34px, 5.5vw, 52px);
+.our-vision__word--shastra {
+  font-size: clamp(24px, 3.6vw, 34px);
   font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--color-gold);
+}
+
+.our-vision__flow-arrows {
+  display: flex;
+  gap: clamp(24px, 6vw, 56px);
+  margin: 2px 0;
+  line-height: 1;
+}
+
+.our-vision__flow-arrow {
+  font-size: 22px;
+  color: var(--color-gold);
+}
+
+.our-vision__word--swasthyam {
+  font-size: clamp(38px, 6.5vw, 58px);
+  font-weight: 700;
+  color: var(--color-ink);
 }
 
 .our-vision__diacritic {
@@ -79,10 +102,10 @@
 }
 
 .our-vision__signature-caption {
-  margin-top: var(--space-2);
+  margin-top: var(--space-3);
   font-size: 16px;
   color: var(--color-ink);
-  max-width: 400px;
+  max-width: 420px;
 }
 
 .our-vision__attribution {
@@ -102,12 +125,20 @@
 }
 
 .our-vision__difference-lede {
-  font-size: 17px;
+  font-family: var(--font-display);
+  font-size: clamp(19px, 2vw, 22px);
+  font-weight: 600;
   color: var(--color-ink);
+  margin: 0 0 var(--space-1);
+}
+
+.our-vision__streams-intro {
+  font-size: 15px;
+  color: var(--color-text-muted);
   margin: 0 0 var(--space-2);
 }
 
-.our-vision__chip-list {
+.our-vision__stream-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -115,33 +146,40 @@
   flex-direction: column;
 }
 
-.our-vision__chip-list li {
+.our-vision__stream-list li {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 0;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 0;
   border-bottom: 1px solid var(--color-hairline);
-  font-family: var(--font-body);
-  font-size: 15px;
 }
 
-.our-vision__chip-list li:last-child {
+.our-vision__stream-list li:last-child {
   border-bottom: none;
 }
 
-.our-vision__chip-from {
-  color: var(--color-text-muted);
-  text-decoration: line-through;
-  text-decoration-color: rgba(107, 86, 68, 0.4);
+.our-vision__stream-term {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
 }
 
-.our-vision__chip-arrow {
-  color: var(--color-terracotta);
+.our-vision__stream-term--sastra {
+  color: var(--color-terracotta-dark);
 }
 
-.our-vision__chip-to {
+.our-vision__stream-term--shastra {
+  color: var(--color-gold);
+}
+
+.our-vision__stream-term--swasthyam {
   color: var(--color-ink);
-  font-weight: 600;
+}
+
+.our-vision__stream-def {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-muted);
 }
 
 .our-vision__mission {

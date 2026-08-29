@@ -47,6 +47,10 @@
   color: var(--color-terracotta);
 }
 
+.nav__links a.is-current {
+  color: var(--color-terracotta);
+}
+
 .nav__toggle {
   display: none;
   flex-direction: column;
