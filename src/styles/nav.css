@@ -30,10 +30,22 @@
   object-fit: contain;
 }
 
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
 .nav__links {
   display: flex;
   gap: var(--space-3);
   list-style: none;
+}
+
+.nav__cta {
+  padding: 8px 18px;
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 .nav__links a {
@@ -86,5 +98,14 @@
 
   .nav__links.is-open {
     display: flex;
+  }
+
+  .nav__cta {
+    padding: 7px 12px;
+    font-size: 12px;
+  }
+
+  .nav__brand span {
+    display: none;
   }
 }
