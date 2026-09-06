@@ -40,6 +40,12 @@
   font-size: 13px;
 }
 
+.contact__success {
+  color: #166534;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 .contact__form .btn-primary {
   align-self: flex-start;
 }

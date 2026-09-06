@@ -173,11 +173,6 @@
   display: block;
 }
 
-.lightbox__image[hidden],
-.lightbox__video[hidden] {
-  display: none;
-}
-
 .lightbox__caption {
   color: rgba(255, 255, 255, 0.85);
   font-size: 14px;

@@ -1,5 +1,3 @@
-const CONTACT_WHATSAPP_NUMBER = '918637632916';
-
 function isValidEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
@@ -7,9 +5,11 @@ function isValidEmail(value) {
 function initContactForm() {
   const form = document.getElementById('contact-form');
   const errorEl = document.getElementById('contact-form-error');
-  if (!form || !errorEl) return;
+  const successEl = document.getElementById('contact-form-success');
+  const submitBtn = form?.querySelector('button[type="submit"]');
+  if (!form || !errorEl || !successEl || !submitBtn) return;
 
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const nameEl = form.querySelector('#contact-name');
@@ -40,10 +40,28 @@ function initContactForm() {
     }
 
     errorEl.hidden = true;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
 
-    const text = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
-    const url = `https://wa.me/${CONTACT_WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank', 'noopener');
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+
+      if (!response.ok) throw new Error('Formspree submission failed');
+
+      form.querySelectorAll('.form-row, button[type="submit"], .contact__form-note').forEach((el) => {
+        el.hidden = true;
+      });
+      successEl.hidden = false;
+    } catch (err) {
+      errorEl.textContent = 'Something went wrong sending your message. Please try again, or email us directly at info@gvsgurukulam.com.';
+      errorEl.hidden = false;
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+    }
   });
 }
 

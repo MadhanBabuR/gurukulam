@@ -1,5 +1,3 @@
-const INTEREST_WHATSAPP_NUMBER = '918637632916';
-
 function isValidEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
@@ -7,19 +5,17 @@ function isValidEmail(value) {
 function initInterestForm() {
   const form = document.getElementById('interest-form');
   const errorEl = document.getElementById('interest-form-error');
-  if (!form || !errorEl) return;
+  const successEl = document.getElementById('interest-form-success');
+  const submitBtn = form?.querySelector('button[type="submit"]');
+  if (!form || !errorEl || !successEl || !submitBtn) return;
 
-  form.addEventListener('submit', (event) => {
+  form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const nameEl = form.querySelector('#interest-name');
     const emailEl = form.querySelector('#interest-email');
-    const phoneEl = form.querySelector('#interest-phone');
-    const messageEl = form.querySelector('#interest-message');
     const name = nameEl.value.trim();
     const email = emailEl.value.trim();
-    const phone = phoneEl.value.trim();
-    const message = messageEl.value.trim();
 
     if (!name || !email) {
       errorEl.textContent = 'Please fill in your name and email.';
@@ -40,14 +36,28 @@ function initInterestForm() {
     }
 
     errorEl.hidden = true;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
 
-    const lines = [`Name: ${name}`, `Email: ${email}`];
-    if (phone) lines.push(`Phone: ${phone}`);
-    if (message) lines.push(`Message: ${message}`);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
 
-    const text = lines.join('\n');
-    const url = `https://wa.me/${INTEREST_WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank', 'noopener');
+      if (!response.ok) throw new Error('Formspree submission failed');
+
+      form.querySelectorAll('.form-row, button[type="submit"], .contact__form-note').forEach((el) => {
+        el.hidden = true;
+      });
+      successEl.hidden = false;
+    } catch (err) {
+      errorEl.textContent = 'Something went wrong sending your message. Please try again, or email us directly at info@gvsgurukulam.com.';
+      errorEl.hidden = false;
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+    }
   });
 }
 

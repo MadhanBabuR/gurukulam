@@ -41,6 +41,12 @@ a {
   color: inherit;
 }
 
+/* Guard against components (flex/inline-block, etc.) that set an explicit
+   `display` and would otherwise silently defeat the `hidden` attribute. */
+[hidden] {
+  display: none !important;
+}
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
