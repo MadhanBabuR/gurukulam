@@ -98,8 +98,8 @@
     ]
   }
   </script>
-  <script type="module" crossorigin src="/assets/main-CMhiSrKu.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-D-4wfawG.css">
+  <script type="module" crossorigin src="/assets/main-B9daK916.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-B-1MTplU.css">
 </head>
 <body>
   <nav class="nav" id="nav">
@@ -453,7 +453,8 @@
     <div class="container">
       <h2 class="section__title">Get Involved</h2>
       <p class="section__intro">Questions, partnership ideas, or want to volunteer? Send us a message.</p>
-      <form id="contact-form" class="contact__form" novalidate>
+      <form id="contact-form" class="contact__form" action="https://formspree.io/f/mjyveewr" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New message from the GVS Gurukulam website contact form" />
         <div class="form-row">
           <label for="contact-name">Name</label>
           <input type="text" id="contact-name" name="name" required />
@@ -467,8 +468,9 @@
           <textarea id="contact-message" name="message" rows="4" required></textarea>
         </div>
         <p id="contact-form-error" class="contact__error" role="alert" hidden></p>
+        <p id="contact-form-success" class="contact__success" role="status" hidden>Thank you — your message has been sent. We'll get back to you by email soon.</p>
         <button type="submit" class="btn btn-primary">Send Message</button>
-        <p class="contact__form-note">Clicking send opens WhatsApp with your message ready to go.</p>
+        <p class="contact__form-note">We'll reply to your email as soon as we can.</p>
       </form>
     </div>
   </section>
