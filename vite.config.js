@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
-// Served from the root of the custom domain (gvsayurvedagurukulam.com),
+// Served from the root of the custom domain (gvsgurukulam.com),
 // so both dev and production builds use the root base path.
 export default defineConfig(() => ({
   base: '/',
