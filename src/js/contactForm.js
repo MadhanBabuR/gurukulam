@@ -56,6 +56,9 @@ function initContactForm() {
         el.hidden = true;
       });
       successEl.hidden = false;
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'form_submit_success', { form_name: 'contact' });
+      }
     } catch (err) {
       errorEl.textContent = 'Something went wrong sending your message. Please try again, or email us directly at info@gvsgurukulam.com.';
       errorEl.hidden = false;

@@ -6,3 +6,4 @@ import './js/footer.js';
 import './js/nav.js';
 import './js/heroCarousel.js';
 import './js/gallery.js';
+import './js/analytics.js';
