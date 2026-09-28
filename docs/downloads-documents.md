@@ -7,7 +7,7 @@ Expected filenames (referenced by the Downloads page):
 
 | File                          | Appears on the page as   |
 |-------------------------------|--------------------------|
-| `80g-certificate.pdf`         | 80G Certificate          |
+| `80g-approval.pdf`            | 80G Tax-Exemption Approval|
 | `csr-1-registration.pdf`      | CSR-1 Registration       |
 | `fcra-registration.pdf`       | FCRA Registration        |
 | `detailed-project-report.pdf` | Detailed Project Report  |
