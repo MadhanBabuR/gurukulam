@@ -11,6 +11,7 @@ export default defineConfig(() => ({
         main: resolve(__dirname, 'index.html'),
         lineage: resolve(__dirname, 'lineage/index.html'),
         programmes: resolve(__dirname, 'programmes/index.html'),
+        downloads: resolve(__dirname, 'downloads/index.html'),
       },
     },
   },
