@@ -1,6 +1,6 @@
 # GVS Ayurveda Gurukulam Website
 
-Single-page static site for GVS Ayurveda Gurukulam (Calicut, Kerala), built by Kalarigram:
+Single-page static site for GVS Ayurveda Gurukulam (Calicut, Kerala), built by Hindustan Kalari Sangam:
 the story, project status, gallery, and donations (Razorpay + PayPal).
 
 ## Develop
